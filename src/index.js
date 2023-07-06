@@ -1,5 +1,6 @@
 // import { render } from 'react-dom';
 import ReactDOM from "react-dom";
+import user from './components/user.json';
 
 const container = document.getElementById('root');
 
@@ -40,3 +41,49 @@ const container = document.getElementById('root');
 // console.log(jsxElements);
 
 // ReactDOM.render(jsxElements, container);
+
+
+
+
+
+// ------------------
+
+{/* <Profile
+  username={user.username}
+  tag={user.tag}
+  location={user.location}
+  avatar={user.avatar}
+  stats={user.stats}
+/> */}
+
+
+
+
+const data = {
+  username: "Jacques Gluke",
+  tag: "jgluke",
+  location: "Ocho Rios, Jamaica",
+  avatar: "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+  stats: {
+    followers: 5603,
+    views: 4827,
+    likes: 1308,
+  }
+};
+
+const profile = (
+  <div class="description">
+    <img
+      src={data.avatar}
+      alt={data.tag}
+      class="avatar"
+    />
+    <p class="name">{ data.username }</p>
+    <p class="tag">@{ data.tag }</p>
+    <p class="location">{ data.location }</p>
+  </div>
+);
+
+console.log(profile);
+
+ReactDOM.render(profile, container);
