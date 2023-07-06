@@ -72,15 +72,15 @@ const data = {
 };
 
 const profile = (
-  <div class="description">
+  <div className="description">
     <img
       src={data.avatar}
       alt={data.tag}
-      class="avatar"
+      className="avatar"
     />
-    <p class="name">{ data.username }</p>
-    <p class="tag">@{ data.tag }</p>
-    <p class="location">{ data.location }</p>
+    <p className="name">{ data.username }</p>
+    <p className="tag">@{ data.tag }</p>
+    <p className="location">{ data.location }</p>
   </div>
 );
 
