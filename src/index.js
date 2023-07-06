@@ -1,8 +1,22 @@
-// import { render } from 'react-dom';
-import ReactDOM from "react-dom";
-import user from './components/user.json';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { App } from 'components/App';
+import './index.css';
 
-const container = document.getElementById('root');
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode basename = "/goit-react-hw-01-components">
+    <App />
+  </React.StrictMode>
+);
+
+
+// import { App } from './components/App';
+// import { render } from 'react-dom';
+// // import ReactDOM from "react-dom";
+
+// const container = document.getElementById('root');
+
+
 
 // Вступ --------------------
 
@@ -46,27 +60,76 @@ const container = document.getElementById('root');
 
 
 
-// ------------------
+// Рендер через jsx розмітку ------------------
+
+
+
+
+// const desc = (
+  // <div className="description">
+  //   <img
+  //     src={user.avatar}
+  //     alt={user.tag}
+  //     className="avatar"
+  //   />
+  //   <p className="name">{ user.username }</p>
+  //   <p className="tag">@{ user.tag }</p>
+  //   <p className="location">{ user.location }</p>
+  // </div>
+// );
+
+// console.log(desc);
+
+// const stats = (
+//   <ul className="stats">
+//     <li>
+//       <span className="label">Followers</span>
+//       <span className="quantity">{ user.stats.followers }</span>
+//     </li>
+//     <li>
+//       <span className="label">Views</span>
+//       <span className="quantity">{ user.stats.views }</span>
+//     </li>
+//     <li>
+//       <span className="label">Likes</span>
+//       <span className="quantity">{ user.stats.likes }likes</span>
+//     </li>
+//   </ul>
+// );
+
+// console.log(stats);
+
+
+// const profile = (
+//   <div className="profile">
+//     {desc}
+//     {stats}
+//   </div>
+// );
+
+// ReactDOM.render(profile, container);
 
 
 
 
 
-const data = user;
+// Приклад використання компонентів ------------------
 
-const profile = (
-  <div className="description">
-    <img
-      src={data.avatar}
-      alt={data.tag}
-      className="avatar"
-    />
-    <p className="name">{ data.username }</p>
-    <p className="tag">@{ data.tag }</p>
-    <p className="location">{ data.location }</p>
-  </div>
-);
+// function Profile(props) {
+//   const { username, tag, location, avatar, stats } = props;
 
-console.log(profile);
+//   console.log(props);
 
-ReactDOM.render(profile, container);
+//   return <div className="description">
+//     <img
+//       src={avatar}
+//       alt={tag}
+//       className="avatar"
+//     />
+//     <p className="name">{ username }</p>
+//     <p className="tag">@{ tag }</p>
+//     <p className="location">{ location }</p>
+//   </div>
+// };
+
+// render( <App />, container );
