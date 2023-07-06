@@ -1,9 +1,11 @@
+import defaultImage from './defaultImage.jpg';
+
 const Profile = (props) => {
-  const { username, tag, location, avatar, stats } = props;
+  const { username, tag, location, avatar = defaultImage, stats } = props;
 
   console.log(props);
 
-    return <div class="profile">
+    return <div className="profile">
         <div className="description">
             <img
             src={avatar}
@@ -15,18 +17,18 @@ const Profile = (props) => {
             <p className="location">{ location }</p>
         </div>
     
-        <ul class="stats">
+        <ul className="stats">
             <li>
-            <span class="label">Followers</span>
-            <span class="quantity">{ stats.followers }</span>
+            <span className="label">Followers</span>
+            <span className="quantity">{ stats.followers }</span>
             </li>
             <li>
-            <span class="label">Views</span>
-            <span class="quantity">{ stats.views }</span>
+            <span className="label">Views</span>
+            <span className="quantity">{ stats.views }</span>
             </li>
             <li>
-            <span class="label">Likes</span>
-            <span class="quantity">{ stats.likes }</span>
+            <span className="label">Likes</span>
+            <span className="quantity">{ stats.likes }</span>
             </li>
         </ul>
     </div>
