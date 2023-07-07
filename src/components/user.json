@@ -1,11 +1,41 @@
-{
-  "username": "Jacques Gluke",
-  "tag": "jgluke",
-  "location": "Ocho Rios, Jamaica",
-  "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
-  "stats": {
-    "followers": 5603,
-    "views": 4827,
-    "likes": 1308
+[
+  {
+    "id": "id-1",
+    "username": "Jacques Gluke",
+    "tag": "jgluke",
+    "location": "Ocho Rios, Jamaica",
+    "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+    "quantity": 10,
+    "stats": {
+      "followers": 5603,
+      "views": 4827,
+      "likes": 1308
+    }
+  },
+  {
+    "id": "id-2",
+    "username": "Alex Gluk",
+    "tag": "GlukAlex",
+    "location": "Jamaica",
+    "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+    "quantity": 15,
+    "stats": {
+      "followers": 503,
+      "views": 4827,
+      "likes": 308
+    }
+  },
+  {
+    "id": "id-3",
+    "username": "Hello world",
+    "tag": "Hola",
+    "location": "Ukraine",
+    "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+    "quantity": 1,
+    "stats": {
+      "followers": 11503,
+      "views": 114827,
+      "likes": 11308
+    }
   }
-}
+]
