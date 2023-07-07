@@ -1,4 +1,4 @@
-import Profile from "./Profile";
+import ProfileList from './ProfileList';
 import user from '../components/user.json';
 
 export const App = () => {
@@ -51,7 +51,7 @@ export const App = () => {
         <div>{el}</div>
       ))} */}
 
-      {user.map(users => 
+      {/* {user.map(users => 
         <Profile
           key={users.id}
           username={users.username}
@@ -61,7 +61,9 @@ export const App = () => {
           stats={users.stats}
           quantity={users.quantity}
         />
-      )}
+      )} */}
+
+      <ProfileList items={ user } />
 
     </div>
   );
